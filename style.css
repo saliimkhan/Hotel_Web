@@ -1,0 +1,1233 @@
+@font-face {
+    font-family: ppwood;
+    src: url(./PPWoodland-Regular.ttf);
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "gilroy";
+
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+
+}
+
+body{
+overflow-x: hidden;
+}
+
+#nav{
+    width: 100%;
+    height: 80px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+    position: fixed;
+    z-index: 99;
+    
+}
+
+#nav-1{
+    width: 40px;
+    cursor: pointer;
+  
+}
+
+#nav .line{
+   
+    width: 100%;
+    background-color: #434B34;
+    height: 2px;
+    margin-bottom: 4px;
+    
+}
+
+#nav-2 button{
+padding: 9px 17px;
+margin-right: 10px;
+border-radius: 50px;
+border: 1px solid #434B34;
+color: #434B34;
+background-color: transparent;
+font-weight: 500;
+font-size: 15px;
+cursor: pointer;
+
+}
+
+#nav-2 button:nth-last-child(1){
+    background-color: #434B34;
+color: #fff;
+}
+
+#page1{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* background-color: lightseagreen; */
+    padding-top: 100px;
+    
+}
+
+#page1 svg{
+    position: absolute;
+    fill:#434B34;
+    scale: .2;
+    top: -12%;
+    z-index: 9;
+    cursor: pointer;
+}
+
+#page1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    top: 0%;
+    position: absolute;
+}
+#page2 {
+    min-height: 160vh;
+    background-color: #5b6647;
+    position: relative;
+  }
+  
+  #page2 #svg1 {
+    width: 100vw;;
+    
+       object-fit: cover;
+    position: absolute;
+  }
+  #text-container {
+    position: relative;
+    z-index: 99;
+    padding-top: 10vw;
+  }
+  
+  #text-container h2 {
+    font-family: ppwood;
+    color: #434b34;
+    font-size: 6vw;
+    line-height: 6vw;
+    font-weight: 100;
+    text-align: center;
+  }
+  
+  #text-container h2 span {
+    font-family:ppwood;
+  }
+  
+  #page2 #svg2 {
+    position: absolute;
+    bottom: -10%;
+    width: 300vw;
+    fill: #5b6647;
+    z-index: 10;
+  }
+  #page2 #svg3 {
+    position: absolute;
+    bottom: -10%;
+    left: -55vw;
+    width: 300vw;
+    fill: #e3e3c4;
+    z-index: -1;
+  }
+  
+
+ 
+#page3{
+  margin-top: 20vh;
+    min-height: 160vh;
+    position: relative;
+    /* background-color: #0e779e; */
+} 
+
+#page3 h1{
+  font-size: 5vw;
+  line-height: 5.5vw;
+  font-family: ppwood;
+  font-weight: 100;
+  text-align: center;
+  color: #e3e3c4;;
+}
+
+#page3 h1 span{
+  font-family: ppwood;
+}
+#page3 #container3{
+  margin-top: 15vh;
+  /* background-color: black; */
+  width: 100vw;
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container3 .left{
+width: 50%;
+height: 100%;
+/* background-color: #fff; */
+}
+
+.left .l1{
+  width: 50%;
+  height: 30vh;
+  /* background-color: red; */
+  margin-left: 10vw;
+  
+}
+
+.l1 h5{
+  font-family: Arial, Helvetica, sans-serif;
+  line-height:1.4vw ;
+  color: #434B34;
+  font-size: 17px;
+  font-weight: 300;
+  text-align: start;
+  margin-bottom: 5vh;
+  transform: translateY(100%);
+  /* display: none; */
+  opacity: 0;
+}
+.l1 button{
+  /* padding: 15px 20px; */
+  border: none;
+  background:none;
+  font-size: 25px;
+  opacity: 0;
+  /* display: none; */
+  transform: translateY(110%);
+}
+
+
+.left .l2{
+  width: 77%;
+  height: 50vh;
+  border-radius: 20px;
+  /* background-color: red; */
+  margin-left: 10vw;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(100%);
+  
+}
+
+.l2 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  
+}
+
+
+#container3 .right{
+  width: 50%;
+  height: 100%;
+  /* background-color: #fff; */
+  
+  }
+
+
+  .right .r1{
+    border-radius: 20px;
+    width: 90%;
+    height: 50%;
+    /* background-color: #cd1a1a; */
+    overflow: hidden;
+    margin-bottom: 5vh;
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  
+.r1 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+.right .r2{
+  border-radius: 20px;
+  width: 40%;
+  height: 35%;
+  /* background-color: #cd1a1a; */
+  overflow: hidden;
+  transform: translateY(100%);
+    opacity: 0;
+}
+ 
+.r2 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+#page4{
+  /* background-color: lightcoral; */
+    min-height: 160vh;
+    position: relative;
+    padding: 1vw 5vw;
+}
+
+#page4 .elem{
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: #f7f7ee;
+  border: 1px solid black;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border: none;
+  cursor: pointer;
+  transform: translateY(30%);
+  opacity: 0;
+}
+#page4 .elem:nth-child(1) {
+  border-top: 1px solid #5b6647;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+#page4 .elem:nth-last-child(1) {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.elem-part1{
+  height: 100%;
+  width: 22%;
+  position: absolute;
+  left: 0%;
+  transform: translateX(-100%);
+  transition: all ease-out 0.4s;
+
+}
+
+.elem:hover .elem-part1{
+  transform: translateX(0);
+}
+
+.elem-part1 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.elem-part2{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  transition: all ease-out 0.4s;
+  color: #434b34;
+  padding: 3.5vw 4vw;
+}
+
+.elex1 h3{
+  font-size: 3.1vw;
+  font-family: ppwood;
+  margin-bottom: 1.5vw;
+  font-weight: 100;
+}
+
+.elex1 p{
+  font-size: 1.2vw;
+font-family: ppwood;
+font-weight: 300;
+}
+
+.elex2 h5{
+  background-color: #5b6647;
+  color: #e3e3c4;
+  padding: 4px 18px;
+  border-radius: 50px;
+  font-size: 1vw;
+  font-family: ppwood;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  transition: all ease-out 0.4s
+}
+.elex2 h5 i{
+  position: absolute;
+  opacity: 0;
+  background-color: #e3e3c4;
+  color: #5b6647;
+  top: 0;
+  left: 0;
+  padding: 5px 18px;
+
+}
+
+.elem:hover .elem-part2{
+  width: 78%;
+  background-color: #5b6647;
+  color: #e3e3c4;
+}
+
+.elem:hover .elex2 h5{
+  background-color: #e3e3c4;
+  color: #5b6647;
+}
+
+.elem:hover .elex2 h5 i{
+  opacity: 1;
+}
+
+
+
+
+#page5{
+
+/* margin-top: -5%; */
+  height: 120%;
+  width: 100%;
+ background-color: burlywood;
+ /* position: relative; */
+ margin-bottom: 5%;
+ 
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+ background-color:#fff;
+ 
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 20vw; */
+}
+.swiper-slide:nth-last-child(1){
+  width: 20%;
+}
+.swiper-slide img {
+  display: block;
+  width: 65%;
+  height: 50%;
+  object-fit: cover;
+  transform: scale(0.6) translateX(-40%) translateY(34%);
+  border-radius: 20px;
+
+}
+
+.swiper-slide {
+  width: 80%;
+  padding: 60px;
+}
+
+.swiper-slide-active img{
+  transform: scale(1) translateX(0%) translateY(0%);
+
+}
+
+
+.swiper-button-next{
+  color: #fff;
+  background-color: #434b34;
+  padding: 5px 20px;
+  height: 20px;
+  border-radius: 50px;
+  position: absolute;
+  top: 10%;
+  right: 5%;
+}
+.swiper-button-prev{
+  color: #fff;
+  background-color: #434b34;
+  padding: 5px 20px;
+  height: 20px;
+  border-radius: 50px;
+  position: absolute;
+  top: 10%;
+  left: 80%;
+}
+
+.swiper-button-next::after{
+  content: "";
+}
+.swiper-button-prev::after{
+  content: "";
+}
+
+ 
+
+
+
+
+
+#page6{
+  min-height: 200vh;
+ background-color: #03364F;
+  position: relative;
+}
+
+
+
+#page6 #svg1 {
+  position: absolute;
+  /* bottom: -10%; */
+  width: 300vw;
+  height: 26vh;
+  fill: #03364F;
+  top: 99%;
+  z-index: 10;
+}
+#page6 #svg2 {
+  position: absolute;
+  top: 99%;
+  height: 25vh;
+  /* bottom: -10%; */
+  left: -50vw;
+  width: 300vw;
+  fill: #e3e3c4;
+  z-index: 9;
+}
+
+#page6 #svg3 {
+  position: absolute;
+  
+  width: 300vw;
+ height: 45vh;
+ fill: #03364F;
+  top: -8%;
+  left: -50vw;
+  z-index:  3;
+} 
+ #page6 #svg4 {
+  
+  position: absolute;
+  top: -4%;
+  /* height: 10vh; */
+  left: -50vw;
+  width: 300vw;
+  
+  fill: #e3e3c4;
+  z-index: 2;
+}
+
+
+
+  
+ #page6 h2{
+  position: absolute;
+  left: 25%;
+  top: 10%;
+  font-size: 5vw;
+  text-align: center;
+  width: 50%;
+  color: #e3e3c450;
+  z-index: 9999;
+  font-family: ppwood;
+  font-weight: 100;
+  line-height: 5vw;
+} 
+
+#page6 h2 span{
+  font-family: ppwood;
+}
+#page6 h6{
+  position: absolute;
+  left: 30%;
+  top: 25%;
+  font-size: 1vw;
+  text-align: center;
+  width: 36%;
+  color: #fff;
+  font-family: gilroy;
+  font-weight: 100;
+  /* font-family: ppwood; */
+  font-weight: 100;
+  /* background-color: blueviolet; */
+  /* transform: translateY(100%); */
+  
+} 
+
+.amaze{
+  width: fit-content;
+  overflow: hidden;
+}
+.anime{
+  display: none;
+  transform: translateY(130%);
+}
+.anime1{
+  display: none;
+  transform: translateY(100%);
+}
+
+
+
+
+
+
+
+
+
+
+ #img-d img{
+
+  margin-top: 42%;
+  width: 22%;
+  margin-left: 5%;
+  border-radius: 20px;
+  transform: translateY(100%);
+  opacity: 0;
+  /* background-color: #9b2626; */
+  
+}
+
+
+#img-d .rd1{
+  margin-top: 3vh;
+  width: 22%;
+  height: 30vh;
+  /* background-color: aqua; */
+  margin-left: 5%;
+  /* transform: translateY(100%);
+  opacity: 0; */
+  
+
+}
+
+.rd1 h1{
+  /* text-align: center; */
+  font-size: 2.6vw;
+  font-weight: 100;
+  font-family: ppwood;
+  margin-bottom: 2vh;
+  color: #E3E3C4;
+  transform: translateY(100%);
+  opacity: 0;
+}
+.rd1 p{
+  font-family: gilroy;
+  color: white;
+  font-weight: 500;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+#img-e img{
+
+  margin-top: -300%;
+  width: 22%;
+  margin-left: 47%;
+  border-radius: 20px;
+  transform: translateY(100%);
+  opacity: 0;
+  
+}
+
+#img-e .rd1{
+  margin-top: 3vh;
+  width: 22%;
+  height: 30vh;
+  /* background-color: aqua; */
+  margin-left: 47%;
+  transform: translateY(100%);
+  opacity: 0;
+  
+
+}
+#img-f{
+  position: absolute;
+  left:74%;
+  top: 50%;
+  z-index: 9999999;
+  width: 22%;
+  height: 65vh;
+  
+  /* background-color: #971f1f; */
+}
+#img-f img{
+
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 2vh;
+  transform: translateY(100%);
+  opacity: 0;
+  /* background-color: #b31919; */
+}
+
+#img-f h1{
+    /* text-align: center; */
+    font-size: 2.6vw;
+    font-weight: 100;
+    font-family: ppwood;
+    margin-bottom: 2vh;
+    color: #E3E3C4;
+    /* background-color: #93cb2b; */
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+#img-f p{
+  font-family: gilroy;
+  color: white;
+  font-weight: 500;
+  /* background-color: #fff; */
+  transform: translateY(50%);
+  opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#page7{
+  margin-top: 25vh;
+  min-height: 90vh;
+ /* background-color: #32a3dc; */
+  position: relative;
+  padding: 3vw 25vw;
+  text-align: center;
+}
+
+#page7 h1{
+  font-family: ppwood;
+  color:#E3E3C4;
+  font-size: 5.1vw;
+  line-height: 5.5vw;
+  font-weight: 100;
+}
+
+#page7 h1 span{
+  font-family: ppwood;
+}
+
+
+#page8{
+  width: 100vw;
+  height: 100vh;
+ background-color:#fff;
+ position: relative;
+ padding: 5vw 0vw;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+
+}
+
+#page8 .left{
+  height: 100%;
+  width: 40%;
+/* background-color: #fff; */
+border-radius: 20px;
+transform: translateX(0%);
+overflow: hidden;
+background-image: url(https://hotelodisej.com/wp-content/uploads/bf-advanced-images/230/ALH_Odisej_outsidepool_01-scaled-480x0.jpg);
+background-size: cover;
+background-position: center;
+}
+#page8 .right{
+  height: 100%;
+  width: 40%;
+/* background-color: #000; */
+border-radius: 20px;
+transform: translateX(0%);
+background-image: url(https://hotelodisej.com/wp-content/uploads/bf-advanced-images/388/alh-img-2-480x0.jpeg);
+background-size: cover;
+background-position: center;
+}
+
+#page8 .center{
+  width: 50%;
+  height: 100%;
+  /* background-color: #c11414; */
+  padding: 5vw 8vw;
+  text-align: center;
+}
+
+.center h1{
+  font-size: 6vw;
+  font-family: ppwood;
+  line-height: 5.7vw;
+  font-weight: 100;
+  margin-bottom: 4vw;
+  color: #434B34;
+}
+
+.center p{
+  color: #434b34e8;
+  font-size: 1.2vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  padding:  0vw 2vw;
+}
+
+#page10{
+  height: 280vh;
+  width: 100vw;
+  /* background-color: #eb8a8a; */
+  position: relative;
+}
+
+#page10 .text10{
+padding: 13vw 30vw;
+text-align: center;
+}
+
+.text10 h1{
+  font-size: 5vw;
+  font-family: ppwood;
+  font-weight: 100;
+  color: #434B34;
+  margin-bottom: 2.5vw;
+  width: fit-content;
+  transform: translateY(100%);
+  opacity: 0;
+}
+.text10 p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1vw;
+  width: 55%;
+  margin-left: 7vw;
+  line-height: 1.3vw;
+  color: #434b34ea;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+ #page10 .t-img10{
+  width: 100%;
+  height: 100vh;
+  /* background-color: #fff; */
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  margin-left: 5vw;
+  position: relative;
+ }
+
+ .t-img10 .left{
+  width: 40%;
+  height: 80%;
+  border-radius: 20px;
+  background-image: url(https://hotelodisej.com/wp-content/uploads/bf-advanced-images/399/ALH_Hotel_Supetar_Cavtat_Pool9-800x0.jpg);
+  background-position: center;
+  background-size: cover;
+  transform: translateY(100%);
+  opacity: 0;
+ }
+
+ .t-img10 .right{
+  position: relative;
+  padding: 10vw 0vw;
+ }
+
+ .t-img10 .right h1{
+  font-family: ppwood;
+  font-weight: 100;
+  font-size: 2.5vw;
+  margin-left: 18vw;
+  margin-bottom: 2vw;
+  color: #434B34;
+  width: fit-content;
+  transform: translateY(100%);
+  opacity: 0;
+ }
+ .t-img10 .right p{
+  width: 30%;
+  font-weight: 100;
+  margin-left: 18vw;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #434b34e1;
+  transform: translateY(100%);
+  opacity: 0;
+ }
+
+
+ #page10 .t-img101{
+  width: 100%;
+  height: 90vh;
+  /* background-color: #fff; */
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  /* margin-left: 5vw; */
+  position: relative;
+ }
+
+ .t-img101 .right{
+  position: relative;
+  padding: 10vw 0vw;
+  margin-left: 18vw;
+ }
+
+
+
+ .t-img101 .right h1{
+  font-family: ppwood;
+  font-weight: 100;
+  font-size: 2.7vw;
+  width: fit-content;
+  line-height: 3vw;
+  margin-bottom: 2vw;
+  color: #434B34;
+  transform: translateY(200%);
+  opacity: 0;
+ }
+
+
+ .t-img101 .right p{
+  width: 45%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #464B3C;
+  transform: translateY(200%);
+  opacity: 0;
+ }
+
+
+ .t-img101 .left{
+  width: 90%;
+  height: 90%;
+  margin-right: 4vw; 
+  /* background-color: #399e9e; */
+   border-radius: 20px;
+  background-image: url(https://hotelodisej.com/wp-content/uploads/bf-advanced-images/397/ALH_Hotel_Supetar_Cavtat_Pool10-800x0.jpg);
+  background-position: center;
+  background-size: cover;
+  transform: translateY(100%);
+  opacity: 0;
+ } 
+
+
+ #page11{
+  width: 100%;
+  height: 110vh;
+  background-color: #fff;
+  position: relative;
+ }
+
+ #page11 img{
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+ }
+
+ #page11 .p-11{
+  position: absolute;
+  z-index: 9999;
+  width: 90%;
+  height: 35vh;
+  background-color: #5A6547;
+  left: 5vw;
+  top: 60%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  transform: translateY(50%);
+  opacity: 0;
+  /* justify-content: center; */
+ }
+ 
+ .p-11 h1{
+  color: #E3E3C4;
+  font-family: ppwood;
+  font-size: 4vw;
+  font-weight: 100;
+  width: fit-content;
+  margin-left: 6vw;
+ }
+
+ #pag13{
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+   /* background-color: rgb(72, 71, 71); */
+   position: relative;
+  }
+  #pag13 img{
+    /* z-index: -1; */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+   }
+
+ #page13{
+ /* width: 100vw; */
+ min-height: 200vh;
+  background-color:  #5b6647;
+  position: relative;
+  
+ }
+
+#page13 #svg3 {
+  position: absolute;
+  
+  width: 300vw;
+ /* height: 45vh; */
+ fill: #5b6647;
+  top: -9%;
+  left: -50vw;
+  z-index:  3;
+} 
+ #page13 #svg4 {
+  
+  position: absolute;
+  top: -9%;
+  /* height: 10vh; */
+  left: -50vw;
+  width: 300vw;
+  
+  fill: #e3e3c4;
+  z-index:-1;
+}
+
+#page13 h1{
+  position: absolute;
+  /* z-index: 99999999; */
+  font-size: 5vw;
+  font-family: ppwood;
+  color:#e3e3c44a;
+  font-weight: 100;
+  width: 45%;
+  /* background-color: #fff; */
+  top: 15vh;
+  line-height: 5.5vw;
+  left: 27vw;
+  
+  
+}
+
+#page13 h1 span{
+  font-family: ppwood;
+  
+}
+
+#page13 p{
+  position: absolute;
+  font-size: 1.1vw;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#ffffffe0;
+  font-weight: 100;
+  /* background-color: #fff; */
+  top: 43vh;
+  left: 32vw;
+  text-align: center;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+
+#page13 .mid{
+  width: 90%;
+  height: 100vh;
+  /* background-color: #fff; */
+  transform: translateY(64%);
+  margin-left: 5%;
+  display: flex;
+align-items: center;
+justify-content: space-between;
+overflow: hidden;
+  /* transform: translateX(5%); */
+}
+
+#page13 .mid .div-1{
+height: 100%;
+width: 33.3%;
+/* background-color: #960808; */
+
+}
+
+
+
+.div-img1{
+  width: 87%;
+  height: 55%;
+  object-fit: cover;
+  border-radius: 20px;
+  /* transform: translateY(100%); */
+  margin-left: 9%;
+  /* margin-bottom: 5%; */
+  object-position: center;
+  transform: translateY(105%);
+  opacity: 0;
+}
+
+
+.div-img2{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+  /* margin-bottom: 5%; */
+  object-position: center;
+  transform: translateY(30%);
+  opacity: 0;
+}
+
+.div-img3{
+  width: 89%;
+  height: 55%;
+  object-fit: cover;
+  border-radius: 20px;
+  /* margin-bottom: 5%; */
+  margin-left: 4%;
+  object-position: center;
+  transform: translateY(30%);
+  opacity: 0;
+}
+
+
+#page12{
+  width: 100%;
+  height: 100vh;
+ background-color: #03364F;
+ position: relative;
+  
+ }
+
+ #page12 nav{
+  height: 20vh;
+  width: 100%;
+  position: relative;
+  /* background-color: #ffffff5f; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* gap: 20vw; */
+
+ }
+
+  #page12  nav h1{
+  color: #E3E3C4;
+  font-family: ppwood;
+  font-size: 4vw;
+  font-weight: 100;
+  width: fit-content;
+   
+ }
+ #page12 h3{
+  color: #fff;
+  font-family: ppwood;
+  font-size: 1.5vw;
+  font-weight: 100;
+  width: fit-content;
+   
+ }
+ #page12 nav img{
+  position: absolute;
+  right:-3%;
+  top: 8%;
+  scale: .3;
+ } 
+
+ #page12 #nav1{
+  height: 5%;
+  width: 90%;
+  /* background-color: #b40e0e; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: .1px solid #ffffff74;
+  margin-top: 5%;
+  margin-left: 5%;
+ }
+
+ #page12 #nav1 h2{
+  font-size: 1.2vw;
+  color: #fff;
+  font-weight: 100;
+  font-family: gilroy;
+ }
+
+
+ #page12 #nav2{
+  height: 5%;
+  width: 90%;
+  /* background-color: #b40e0e; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: .1px solid #ffffff74;
+  margin-top: 10%;
+  margin-left: 5%;
+ }
+
+ #page12 #nav2 h2{
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+  font-family: gilroy;
+  font-size: 1.2vw;
+ }
+
+ #page12 #nav3{
+  height: 8%;
+  width: 90%;
+  /* background-color: #b40e0e; */
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* border-bottom: .1px solid #ffffff74; */
+  /* margin-top: 2%; */
+  margin-left: 5%;
+  gap: 30vw;
+ }
+
+ #page12 #nav3 h2{
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+  font-family: gilroy;
+  font-size: 1.2vw;
+ }
+
+ #page12 #nav4{
+  height: 8%;
+  width: 98%;
+  /* background-color: #b40e0e; */
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* border-bottom: .1px solid #ffffff74; */
+  margin-top: 10%;
+  margin-left: 5%;
+  gap: 55vw;
+ }
+
+ #page12 #nav4 h6{
+  text-transform: uppercase;
+  color: #ffffff7a;
+  font-weight: 500;
+  font-family: gilroy;
+  font-size: .8vw;
+ }
